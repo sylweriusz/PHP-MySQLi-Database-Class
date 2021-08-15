@@ -803,16 +803,20 @@ print_r ($db->trace);
 ```
     [0] => Array
         (
-            [0] => SELECT  * FROM t_users ORDER BY `id` ASC
-            [1] => 0.0010669231414795
-            [2] => MysqliDb->get() >>  file "/avb/work/PHP-MySQLi-Database-Class/tests.php" line #151
+            ['query'] => SELECT  * FROM t_users ORDER BY `id` ASC
+            ['time'] => 0.0010669231414795
+            ['call'] => MysqliDb->get() >>  file "/avb/work/PHP-MySQLi-Database-Class/tests.php" line #151
+	    ['error'] => ''
+	    ['errornr'] => 0
         )
 
     [1] => Array
         (
-            [0] => SELECT  * FROM t_test
-            [1] => 0.00069189071655273
-            [2] => MysqliDb->get() >>  file "/avb/work/PHP-MySQLi-Database-Class/tests.php" line #152
+            ['query'] => SELECT  * FROM t_test
+            ['time'] => 0.00069189071655273
+            ['call'] => MysqliDb->get() >>  file "/avb/work/PHP-MySQLi-Database-Class/tests.php" line #152
+	    ['error'] => ''
+	    ['errornr'] => 0
         )
 
 ```
